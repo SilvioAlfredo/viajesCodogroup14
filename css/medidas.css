@@ -1,0 +1,32 @@
+.logo{
+  width: 70px;
+  margin-right: 10%;
+}
+.nombre{
+  width: 15vw;
+}
+.header, .menúItems{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.menúItems{
+  margin-left: 5%;
+}
+.menú1{
+  padding-left: 2vw;
+}
+
+.destinos, .seccionAclamadas{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.styleDestino, .styleAclamadas{
+  border-style: hidden;
+  border-width: 1px;
+  padding: 5px;
+  width: 100px;
+  margin-left: 2vw;
+}
+.imagenDestinos{
+  width: 100px;
+}
