@@ -1,28 +1,35 @@
-/*todo sobre el index-----*/
-const zoomBtnDerecha = document.getElementById('.botonSiguiente');
-const zoomBtnIzquierda = document.getElementById('.botonAnterior');
-const btnRegistrarse = document.getElementById('.botonRegistrarse');
 
-    zoomBtnIzquierda.addEventListener('mouseover', () => {
-    zoomBtnIzquierda.style.transform = 'scale(1.2)';
-    }); 
-    zoomBtnIzquierda.addEventListener('mouseout', () => {
-    zoomBtnIzquierda.style.transform = 'scale(1)';
-    });
+const contenedorLugares = document.querySelector('.destinos');
+const rutaDestinosJSON = 'destinos.json';
 
-    zoomBtnDerecha.addEventListener('mouseover', () => {
-    zoomBtnDerecha.style.transform = 'scale(1.2)';
-    });
-    zoomBtnDerecha.addEventListener('mouseout', () => {
-    zoomBtnDerecha.style.transform = 'scale(1)';
-    });
+fetch(rutaDestinosJSON)
+  .then(response => response.json())
+  .then(data => {
+    for (const dato of data) {
+      const titulo = dato.title;
+      const src = dato.src;
+      const nuevoLi = document.createElement('li');
+      nuevoLi.innerHTML = `<img class="imagenDestinos" src="${src}" alt="${titulo}"><h4>${titulo}</h4>`;
+      nuevoLi.classList.add('styleDestino');
+      contenedorLugares.appendChild(nuevoLi);
+    }
+  })
+  .catch(err => console.error('Error al leer el archivo JSON:', err));
 
-    btnRegistrarse.addEventListener('mouseover', () => {
-    btnRegistrarse.style.transform = 'scale(1.2)';
-    });
-  
-    btnRegistrarse.addEventListener('mouseout', () => {
-    btnRegistrarse.style.transform = 'scale(1)';
-    });
 
-/* Todo sobre el index--------*/
+const contenedorAclamadas = document.querySelector('.seccionAclamadas');
+const rutaVisitadosJSON = 'visitados.json';
+
+fetch(rutaVisitadosJSON)
+  .then(response => response.json())
+  .then(data => {
+    for (const dato of data) {
+      const titulo = dato.title;
+      const src = dato.src;
+      const nuevoLi = document.createElement('li');
+      nuevoLi.innerHTML = `<img class="imagenDestinos" src="${src}" alt="${titulo}"><h4>${titulo}</h4>`;
+      nuevoLi.classList.add('styleAclamadas');
+      contenedorAclamadas.appendChild(nuevoLi);
+    }
+  })
+  .catch(err => console.error('Error al leer el archivo JSON:', err));

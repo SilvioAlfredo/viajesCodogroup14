@@ -1,0 +1,22 @@
+
+.listaNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.secciónNav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.destinosContainer, .aclamadasContainer{
+  display: flex;
+  flex-direction: column;
+}
+.destinos, .seccionAclamadas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
