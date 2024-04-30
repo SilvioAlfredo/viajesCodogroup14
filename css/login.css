@@ -11,12 +11,14 @@ a {
 
 h2 {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   display:inline-block;
   color: #fff;
 }
-
+.titulo{
+  font-weight: bold;
+}
 
 
 /* ESTRUCTURA */
@@ -30,6 +32,7 @@ h2 {
   height: 750px;
   padding: 20px;
   background-image: linear-gradient(to right top, #0abee8, #4dc1ec, #6dc5ef, #86c8f1, #9bccf2, #95c4ee, #90bce9, #8bb4e4, #6e9ed9, #5288ce, #3472c2, #035cb5);
+  font-size: 18px;
 }
 
 #formContent {
@@ -46,6 +49,7 @@ h2 {
   padding: 2px ;
   text-align: right;
   width: 90%;
+  margin: 10px 10px 20px 10px;
 }
 
 
@@ -62,7 +66,7 @@ input[type=button], input[type=submit]  {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
@@ -83,7 +87,7 @@ input[type=text], input[type=email] {
   padding: 10px 25px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 5px;
   width: 85%;
   transition: all 0.5s ease-in-out;
@@ -164,4 +168,15 @@ input[type=text]:placeholder, input[type=email]:placeholder {
 
 .underlineHover:hover::after{
   width: 100%;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 600px){ /*CELULARES*/
+  #formContent {
+    width: 70%;
+    font-size: 16px;
+  }
+  
 }
