@@ -1,0 +1,83 @@
+.main_fondo{
+    background-image: url(../img/imagen_principal/imagen_portada_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainUno{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+}
+div .tituloPrincipal{
+    font-size: 90px;
+    text-align: center;
+    text-shadow:
+    -5px 5px 0 #fff, 
+    -5px 5px 0 #fff,  
+    -5px 5px 0 #fff,  
+    -5px 5px 0 #fff;
+}
+div .subtituloPrincipal{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 
+    -2px 2px 0 #fff, 
+    -2px 2px 0 #fff,  
+    -2px 2px 0 #fff,  
+    -2px 2px 0 #fff;
+}
+.botonRegistrarse{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px 50px;
+    transition: 0.3s;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bordo);
+    
+}
+.botonRegistrarse:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@media (max-width: 1024px){
+    .tituloysubtitulo .tituloPrincipal{
+        font-size: 60px;
+    }
+    .tituloysubtitulo .subtituloPrincipal{
+        font-size: 30px;
+    }
+    .tituloSection{
+        font-size: 40px;
+    }
+    .tituloHoteles{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px){
+    .tituloysubtitulo .tituloPrincipal{
+        font-size: 40px;
+    }
+    .tituloysubtitulo .subtituloPrincipal{
+        font-size: 25px;
+    }
+    .main_fondo{
+        height: 600px;
+    }
+    .tituloSection{
+        font-size: 30px;
+    }
+}

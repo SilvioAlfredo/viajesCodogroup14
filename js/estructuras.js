@@ -1,3 +1,4 @@
+
 const contenedorLugares = document.querySelector('.destinos');
 const rutaDestinosJSON = 'destinos.json';
 

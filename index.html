@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +7,108 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/medidas.css">
     <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/imputBuscador.css">
+    <link rel="stylesheet" href="./css/botonesPagina.css">
+    <link rel="stylesheet" href="./css/portada.css">
+    <link rel="stylesheet" href="./css/hoteles.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- bootstrap-icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
-
   <body>
     <header class="header">
-      <nav class="navegacion">
-        <div class="secciónNav">
-          <img class="logo" src="">
-          <h3 class="nombre">C&C Place</h3>
-        </div> 
-        <ul class="listaNav">
-          <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
-          <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
-          <li class="listaItem"><a class="linkNav iniciarSesion" href="">Iniciar Sesión</a></li>
-        </ul>
-      </nav>
+        <div class="header_nombre">
+          <h3><a class="nombre_empresa" href="./index.html">nombreEmpresa</a></h3>
+        </div>
+        <nav class="Lista">
+          <ul class="listaNav">
+            <li class="listaItem"><a class="linkNav" href="#tendencias">Ofertas!</a></li>
+            <li class="listaItem"><a class="linkNav" href="#contactos">Contactanos</a></li>
+            <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
+            <li class="listaItem"><a class="linkNav iniciarSesion" href="./sitiosweb/login.html">Iniciar Sesión</a></li>
+          </ul>
+        </nav>
     </header>
     <main class="main">
-      <section class="mainUno">
-        <h1 class="tituloPrincipal">...<br>...</h1>
-        <h2 class="subtituloPrincipal">Disfrutar donde quieras. <br> Cancela en cualquier momento.</h2>
-        <button class="botonRegistrarse">Registrate</button>
-      </section>
-      <section class="">
-        <h2 class="tituloSection">¿?</h2>
-        <form class="buscadorDestinos">
-          <input class="inputBuscador" type="text" placeholder="Buscar..." name="buscar">
-          <button class="botonBuscador" type="submit">Buscar</button> 
-        </form>
-      </section>
-      <hr>
-      <section class="">
-        <h3 class="tituloSection">Los destinos de hoy</h3>
-        <div class="destinos" id="destinosContainer">
-          <div class="destinos">
-            <a href="">
-              <div class="destinos">
-                <img class="imgPlace" src="" alt="" >
-                <div class="tituloPlace">
-                  <h4></h4>
-                </div>
-              </div>
-            </a>
+      <div class="main_fondo">
+        <section class="mainUno">
+          <div class="tituloysubtitulo">
+              <h1 class="tituloPrincipal">Agencia de turismo,<br>hoteles ¡y mucho mas!</h1>
+              <h2 class="subtituloPrincipal">Reserva tus hoteles y viajes con<br>total seguridad.</h2>
           </div>
-          <button class="botonAnterior">Anterior</button>
-          <button class="botonSiguiente">Siguiente</button>
+          <button class="botonRegistrarse" id="botonRegistrarse">¡Registrate ya!</button>
+        </section>
+      </div>
+<!----------------section input----------------->
+      <section class="fondo">
+        <div class="pregunta_seccion_input">
+          <h2 class="tituloSection">¿Hacia donde es tu destino?</h2>
+          <form class="buscadorDestinos">
+            <input class="inputBuscador" type="text" placeholder="Buscar..." name="buscar">
+            <button class="botonBuscador" type="submit">Buscar</button> 
+          </form>
+        </div>
       </section>
-      <hr>
-      <section class="...">
-        <h3 class="tituloSection">Las más aclamadas</h3>
-        <div class="aclamadas" id="aclamadasContainer">
-          <div class="seccionAclamadas"><img class="imgAclamada"src="">
-          </div>
-      </section>
+<!----------------Esta es la linea roja que divide el sitio web-->
+      <div class="lineaDivisoraFondo">
+        <div class="lineaDivisora">
+        </div>
+      </div>
+<!-----------------------Contenedor de imagenes, hoteles------------------>
+      <div class="contenedorImagenes">
+        <section class="contenedorTitulo">
+          <h3 class="tituloHoteles">¡Hoteles más buscados y recomendados!</h3>
+        </section>
+        <div class="centrarImagenes">
+          <section class="contenedor_de_imagenes">
+            <section class="imagenes_hoteles">
+              <h3</h3>
+                <div class=".destinos" id="destinosContainer">
+                  <img class="imgPlace" src="./img/lugares/imagen1.jpeg" alt="imagen1" >
+                  <div class="tituloPlace">
+                    <h4></h4>
+                  </div> 
+            </section>
+          </section>
+        </div>
+        <div class="botones_paginas">
+          <section class="boton_anterior">
+            <button class="botonAnterior"  id="botonAnterior">Anterior</button>
+          </section>
+          <section class="boton_siguiente">
+            <button class="botonSiguiente" id="botonSiguiente">Siguiente</button>
+          </section>
+        </div>
+      </div>
     </main>
+<!-------------hecho lo de arriba que es la seccion principal----------->
+      <div class="lineaDivisoraFondo">
+        <div class="lineaDivisora"></div>
+      </div>
+<!-------------Linea divisora roja-------------------->
+      <div class="seccion_abajo">
+        <section class="subtituloSection">
+          <h3 class="tituloSection">Lugares más visitados simultáneamente.</h3>
+            <div class="aclamadas" id="aclamadasContainer">
+              <div class="seccionAclamadas"><img class="imgAclamada"src="">
+              </div>
+          </section>
+        <div class="contenedor_carrusel">
+          <div class="contenedor_imagenes_subtitulos">
+                    <!--seccion de hoteles mas visitados-->
+              <section class="imagenes_hoteles15">
+                  <div class="destino15" id="destinosContainer15">
+                    <a href="#"><img class="imgPlace" src="./img/lugares/imagen15.jpeg" alt="imagen15" ></a>
+                      <div class="tituloPlace15">
+                          <h4></h4>
+                      </div> 
+                  </div>    
+              </section>
+                  <!--seccion de hoteles mas visitados-->
+          </div>
+        </div>
+        <!-----------------------------footer-->
     <footer>
 
       <div class="footer-personal">
@@ -93,7 +138,8 @@
       <p class="copyright">Copyright © 2024 ViajesCACGroup14. Todos los derechos reservados.</p>
   
     </footer>
-  </body>
+  
   </body>
   <script src="./js/estructuras.js"></script>
+  <script src="./js/botones.js"></script>
 </html>

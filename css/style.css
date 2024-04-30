@@ -1,62 +1,102 @@
-* {
+:root{
+    --bordo: #680f19;
+    --celeste: #3D7CAE;
+    /*--gris: #5F5F5F;/*Estos son los codigos de colores*/
+    --gris: #181419;
+    --bordes: #D9D9D9;
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-footer .footer-personal {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #680f19;
-    width: 100%;
-    height: 140px;
+/*---------------------esto es el contenedor de las imagenes de hoteles--------*/
+.centrarImagenes{
     display: flex;
-    justify-content: space-around;
-    padding-top: 25px; }
-    footer .links p {
-        color: white;
-        text-align: left;
-        display: block;
-        margin-bottom: 10px;}
-    footer .footer-personal .bi-whatsapp {
-        font-size: 30px;
-        text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
-        color: white; }
-        footer .footer-personal .bi-whatsapp:hover {
-            color: #4BCA5A; }
-    footer .footer-personal .bi-twitter {
-        font-size: 30px;
-        text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
-        color: white; }
-        footer .footer-personal .bi-twitter:hover {
-            color: #1A8CD8; }
-    footer .footer-personal .bi-instagram {
-        font-size: 30px;
-        text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
-        color: white; }
-        footer .footer-personal .bi-instagram:hover {
-            color: #AE1179; }
-    footer .footer-personal .bi-facebook {
-        font-size: 30px;
-        text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
-        color: white; }
-        footer .footer-personal .bi-facebook:hover {
-        color: #1877F2; }
-  
-footer .copyright {
-    background-color: #680f19;
-    text-align: center;
-    padding: 5px;
-    margin-bottom: 0%;
-    color: white; }
+    justify-content: center;
+    margin: 30px 0;
+}
+.contenedorImagenes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.tituloSection{
+    color: white;
+    font-size: 25px;
+    margin: 50px 0;
+}
+.contenedor_de_imagenes{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr 50px);
+    max-width: 2000px;
+}
+.imgPlace{
+    background-color: var(--bordes);
+    padding: 3px;
+    width: 200px;
+    height: 280px;
+    margin: 25px;
+}
+.boton_anterior{
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+}
+.boton_siguiente{
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: center;
+}
+/*------------------------------------*/
 
-    .styleDestino, .styleAclamadas, .listaNav {
-        list-style: none;
-      }
+
+/*----------------todo el contenido de main principal arriba----*/
+
+/*linea divisora--------*/
+.lineaDivisoraFondo{
+    background-color: var(--gris);
+}
+.lineaDivisora{
+    width: 80%;
+    height: 1.5px;
+    background-color: red;
+    margin: 0 auto;
+}
+/*linea divisora--------*/
+/*----------aca va el contenido en forma de carrusel---*/
+.seccion_abajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor_carrusel{
+    display: flex;
+    width: 100%;
+    /*background-color: #000;*/
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    
+}
+.contenedor_imagenes_subtitulos{
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+
+.subtituloSection{
+    text-align: center;
+}
+.tituloSection{
+    font-size: 50px;
+}
+
+/*-----------------aca comienza el footer ------------------*/
+
+
+
+

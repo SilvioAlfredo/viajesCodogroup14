@@ -1,0 +1,47 @@
+.contenedorTitulo{
+    color: white;
+    font-size: 30px;                     /*------titulo---------*/
+    margin: 20px 0 40px 0;
+    text-align: center;
+}                                  
+.tituloHoteles{
+    font-size: 40px;
+}
+.contenedor_de_imagenes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    max-width: 2000px;
+}
+.imgPlace{
+    background-color: var(--bordes);
+    margin: 3px;
+    width: 200px;
+    height: 280px;
+    margin: 25px;
+}
+@media (max-width: 1200px){
+    .contenedor_de_imagenes{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    }
+}
+@media (max-width: 1030px){
+    .contenedor_de_imagenes{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    }
+}
+@media (max-width: 768px){
+    .contenedor_de_imagenes{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    }
+}
+@media (max-width: 480px){
+    .contenedor_de_imagenes{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    }
+}
+

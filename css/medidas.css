@@ -5,10 +5,11 @@
 .nombre{
   width: 15vw;
 }
-.header, .menúItems{
+/*.header, .menúItems{
   margin-left: 5%;
   margin-right: 5%;
 }
+*/
 .menúItems{
   margin-left: 5%;
 }
