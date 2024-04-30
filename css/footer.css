@@ -53,7 +53,9 @@ footer .copyright {
     text-align: center;
     padding: 5px;
     margin-bottom: 0%;
-    color: white; }
+    color: white; 
+    margin-top: 0%;
+}
 
     .styleDestino, .styleAclamadas, .listaNav {
         list-style: none;
