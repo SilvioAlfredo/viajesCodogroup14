@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: content-box;
 }
 
 
@@ -57,6 +58,7 @@ p{
 label{
     margin-left: 5px;
     font-size: medium;
+    cursor: pointer;
 }
 
 /*INPUT*/
@@ -64,16 +66,19 @@ label{
 .button{
     margin-top: 10px;
     grid-column: span 2;
+    color: #fff;
+    padding-left: 15px;
 }
 .inputBarra{
     background-color: white;
     border: 3px solid transparent;
-    height: 20px;
-    line-height: 20px;
+    height: 30px;
+    line-height: 30px;
     padding: 0 20px 0 10px;
     transition: .3s ease all;
-    width: 70%;
+    width: 75%;
     margin-top: 5px;
+    border-radius: 5px;
 }
 
 .inputBarra:focus{
@@ -81,6 +86,9 @@ label{
     outline: none;
 }
 
+.lab-inp{
+    padding-left: 15px;
+}
 
 /*BOTON*/
 
