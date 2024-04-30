@@ -177,6 +177,7 @@ input[type=text]:placeholder, input[type=email]:placeholder {
   #formContent {
     width: 70%;
     font-size: 16px;
+    
   }
   
 }
