@@ -49,19 +49,6 @@ h2 {
 
 
 
-/*PESTAÑA*/
-
-h2.inactive {
-  color: #cccccc;
-}
-
-h2.active {
-  color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
-}
-
-
-
 /*INPUT*/
 
 input[type=button], input[type=submit]  {
@@ -159,7 +146,8 @@ input[type=text]:placeholder, input[type=email]:placeholder {
   animation-delay: 1s;
 }
 
-/* Animation - underline */
+
+/* ANIMATION - underline */
 .underlineHover:after {
   display: block;
   width: 0;
@@ -175,12 +163,4 @@ input[type=text]:placeholder, input[type=email]:placeholder {
 
 .underlineHover:hover::after{
   width: 100%;
-}
-
-
-
-/* OTHERS */
- 
-#icon {
-  width:30%;
 }
