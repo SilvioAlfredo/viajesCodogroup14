@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+}
+
+
+
+
+/* ESTRUCTURA */
+
+.contenedor{
+    background-image: linear-gradient(to right top, #0abee8, #4dc1ec, #6dc5ef, #86c8f1, #9bccf2, #95c4ee, #90bce9, #8bb4e4, #6e9ed9, #5288ce, #3472c2, #12304e);
+    width: 100%;
+    min-height: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-wrapper{
+    width: fit-content;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+    background-color: #767877;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    padding:8px 3px 12px 3px;
+    color: #fff
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+#form-footer {
+    padding: 8px ;
+    text-align: left;
+    grid-column: span 2;
+}
+
+a{
+    width: 90%;
+    text-decoration: none;
+    color: #fff
+}
+p{
+    margin: 10px 0px;
+}
+
+
+/*LABEL*/
+
+label{
+    margin-left: 5px;
+    font-size: medium;
+}
+
+/*INPUT*/
+
+.button{
+    margin-top: 10px;
+    grid-column: span 2;
+}
+.inputBarra{
+    background-color: white;
+    border: 3px solid transparent;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 20px 0 10px;
+    transition: .3s ease all;
+    width: 70%;
+    margin-top: 5px;
+}
+
+.inputBarra:focus{
+    border: 3px solid #a51c30;
+    outline: none;
+}
+
+
+/*BOTON*/
+
+p input[type=submit]{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+input[type=submit]{
+    background-color: #a51c30;
+    border: none;
+    color: #fff;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 60%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    grid-column: span 2;
+}
+
+input[type=submit]:hover{
+    background-color: #86c8f1;
+    box-shadow:inset 2px -5px 37px 2px rgba(15,73,150,1); 
+}
+
+input[type=submit]:active{
+    transform:scale(1.1);
+}
+
+  /*ANIMACION -HELP*/
+.help:hover {
+    color: rgba(15,73,150,1);
+    font-weight:400;
+    text-shadow: 4px 4px 3px #90bce9;
+}
+
+.zoomIn{
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 600px){ /*CELULARES*/
+    *{
+        box-sizing: content-box;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    p{
+        margin: 5px;
+    }
+    .inputBarra{
+        margin: 0%;
+        width: 70%;  
+    }
+    input[type=submit]{
+        margin-left: 30px;
+        width: 60%;
+    }
+    .lab-inp{
+        padding-left: 30px;
+    }
+    .button{
+        margin-bottom: 10px;
+    }
+}
